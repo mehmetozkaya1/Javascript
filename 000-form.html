@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body onload="odaklan()">
+    <h1>Form</h1>
+    <form>
+        Ad : <input type="text" name="" id="isim">
+        <br>
+        Soyad: <input type="text" name="" id="soyad">
+        <br>
+        <input type="button" name="" onclick="yaz()" id="submit" value="Submit">
+    </form>
+
+    <hr style="height: 20px; color:blue">
+
+    <h1>Karesi Alınacak Sayıyı Giriniz</h1>
+
+    <form>
+        Sayı: <input type="text" name="" id="sayi">
+        <input type="button" name="" id="submit" value="Al" onclick="kare_al()">
+    </form>
+
+    <h2 id="cevap"></h2>
+
+    <hr>
+    <hr>
+
+    <form>
+        Sayı 1: <input type="text" name="" id="sayi1">
+        Sayı 2: <input type="text" name="" id="sayi2">
+        <input type="button" name="" id="submit" value="Topla" onclick="topla()">
+    </form>
+
+    <script src="./93-form_sayi_topla.js"></script>
+</body>
+</html>

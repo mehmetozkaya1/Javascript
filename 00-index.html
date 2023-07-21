@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index HTML</title>
+</head>
+<body onload="selam()">
+    <h1 id="baslik">Önceki Başlık</h1>
+    <h2 id="hata">Linkler</h2>
+    <a href="#">Anasayfa</a> |
+    <a href="#">Biz kimiz</a> |
+    <a href="#">İletişim</a> 
+    <h2>Resimler</h2>
+    <img src="https://via.placeholder.com/300x200" alt="">
+    <img src="https://via.placeholder.com/400x500" alt="">
+    <img id="resim" src="https://via.placeholder.com/300x200" alt="" onmouseover="matem_bayrak()" onmouseout="albayrak()">
+    <h2>Form</h2>
+    <form name="test">
+        Ad: <input type="text"> <br> Soyad: <input type="text"> <br>
+        <input type="button" value="Tıkla" onclick="yaz()"> <input type="reset" value="Sıfırla">
+    </form>
+    <button type="button" onclick="alert_goster()">Alert</button>
+    <button type="button" onclick="renk_degis()">Renk Değiştir</button>
+
+    <!-- HTML etiketleri içerisinde this komutu ile etikete ulaşabiliriz. -->
+
+    <h2 onmouseout="this.innerHTML='Mouse Uzakta'" onmouseover="this.innerHTML='Mouse Üzerinde'" onclick="this.innerHTML = 'Tıklandı!'">Başlık</h2>
+
+    <hr>
+
+    <p>Tarihi görmek için butona tıkla.</p>
+    <button onclick="tarih()">Tarih ne?</button>
+    <p id="demo"></p>
+
+    <hr>
+
+    <input type="button" value="AÇ" onclick="pencere()">
+
+    <hr>
+
+    <button type="button" value="Zaman" onclick="setTimeout(zaman,5000);">Butona Tıkla!</button>
+
+    <hr>
+
+    <div id="kutu"></div>
+
+    <script src="./96-hata_kontrol.js"></script>
+</body>
+</html>
